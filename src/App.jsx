@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
 
 const App = () => {
-
-  const [Num, setNum] = useState(0)
+  const arr = ["kartik","Utkarsh","Pranav","Chetan","Lokesh"]
+  const [user, setuser] = useState(0)
 
   return (
     <div>
-      <h1>{Num}</h1>
+      <h1>{arr[user]}</h1>
       <button onClick={()=>{
-        setNum(Num+1)
-      }}>Increase</button>
-      <button onClick={()=>{
-        setNum(Num-1)
-      }}>Decrease</button>
+        setuser(user+1)
+      }}>Change User</button>
     </div>
   )
 }
